@@ -6,10 +6,9 @@ int main() {
     printf("Saisir la borne inf, puis la borne sup pour le calcul de la somme : ");
     scanf("%u %u", &x, &y);
 
-    if (x > y) {
-        unsigned int temp = x;
-        x = y;
-        y = temp;
+    while (x > y) {
+        printf("Attention, saisir la borne inf puis la borne sup : ");
+        scanf("%u %u", &x, &y);
     }
 
     for (int i = x; i <= y; i++) {
@@ -20,3 +19,4 @@ int main() {
 
     return 0;
 }
+
